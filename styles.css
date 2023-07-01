@@ -244,11 +244,19 @@ html, body {
         padding-top: 70px;
         align-items: center;
     }
+    #description {
+        text-align: center;
+        line-height: 25px;
+    }
 }
 
 @media (max-width: 640px) {
     #main-img {
         width: 360px;
         height: 360px;
+    }
+    #description {
+        text-align: center;
+        line-height: 25px;
     }
 }
