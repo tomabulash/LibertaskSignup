@@ -72,6 +72,7 @@ html, body {
     transition: all 140ms ease-in;
     font-family: inherit;
     color: #677780;
+    background-color: white;
 }
 
 .form-input:focus {
