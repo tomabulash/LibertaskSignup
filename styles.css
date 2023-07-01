@@ -56,6 +56,7 @@ html, body {
     margin-top: 47px;
     font-size: 1em;
     position: relative;
+    width: fit-content;
 }
 
 .form-input {
@@ -126,8 +127,8 @@ html, body {
 
 .visibility {
     position: absolute;
-    margin-left: 347px;
-    margin-top: -37px;
+    right: 15px;
+    top: 20px;
     width: fit-content;
     z-index: 10;
     background-color: white;
