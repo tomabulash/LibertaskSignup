@@ -1,13 +1,13 @@
-const fullname = document.getElementById("full-name");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirm-password");
 const terms = document.getElementById("terms");
-const submit = document.getElementById("submit");
 const emailNotes = document.getElementById("email-notes");
 const passwordNotes = document.getElementById("password-notes");
 const termsNotes = document.getElementById("terms-notes");
 const form = document.querySelector("form");
+const eyeOne = document.getElementById("eye-one");
+const eyeTwo = document.getElementById("eye-two");
 
 email.addEventListener("focusout", () => {
     if(email.validity.typeMismatch) {
@@ -137,3 +137,30 @@ form.addEventListener("submit", (e) => {
     }
 });
 
+eyeOne.addEventListener("click", () => {
+    if(password.type == "password") {
+        password.type = "text";
+        confirmPassword.type = "text";
+        eyeOne.style.opacity = "100%";
+        eyeTwo.style.opacity = "100%";
+    } else {
+        password.type = "password";
+        confirmPassword.type = "password";
+        eyeOne.style.opacity = "75%";
+        eyeTwo.style.opacity = "75%";
+    } 
+}); 
+
+eyeTwo.addEventListener("click", () => {
+    if(password.type == "password") {
+        password.type = "text";
+        confirmPassword.type = "text";
+        eyeOne.style.opacity = "100%";
+        eyeTwo.style.opacity = "100%";
+    } else {
+        password.type = "password";
+        confirmPassword.type = "password";
+        eyeOne.style.opacity = "75%";
+        eyeTwo.style.opacity = "75%";
+    } 
+}); 

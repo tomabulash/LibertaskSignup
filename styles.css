@@ -124,6 +124,20 @@ html, body {
     opacity: 65%;
 }
 
+.visibility {
+    position: absolute;
+    margin-left: 347px;
+    margin-top: -37px;
+    width: fit-content;
+    z-index: 10;
+    background-color: white;
+}
+
+#eye-one, #eye-two {
+    width: 25px;
+    opacity: 75%;
+}
+
 .error {
     margin-top: 5px;
     margin-left: 21px;
