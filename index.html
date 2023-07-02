@@ -14,42 +14,48 @@
 <body>
     <div id="body-container">
         <div id="left-container">
-            <img src="media/1x/main_main-img.jpg" id="main-img">
+            <div id="img-container">
+                <img src="media/1x/main_main-img.jpg" id="main-img">
+            </div>
         </div>
         <div id="right-container">
-            <img src="media/1x/logo_logo.jpg" id="logo">
-            <div id="description">Create your account to experience Libertask</div>
-            <form action='' method='get' class='sign-up-form' novalidate>
-                <div class="form-row full-name-div">
-                    <input id="full-name" name="full-name" type="text" class="form-input" placeholder=" " autocomplete="off" autofocus/>
-                    <label for="full-name" class="form-label">Full name</label>                   
-                </div>
-                <div class="form-row email-div">
-                    <input id="email" name="email" type="email" class="form-input" placeholder=" " autocomplete="off" required/>
-                    <label for="email" class="form-label">Email address</label>
-                    <div class="required" id="email-notes">Required</div>
-                </div>
-                <div class="form-row password-div">
-                    <div class="visibility"><img src="media/1x/eye.jpg" id="eye-one"></div>
-                    <input id="password" name="password" type="password" class="form-input" placeholder=" " minlength="8" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$" required/>
-                    <label for="password" class="form-label">Password</label>
-                    
-                </div>
-                <div class="form-row confirm-password-div">
-                    <div class="visibility"><img src="media/1x/eye.jpg" id="eye-two"></div>
-                    <input id="confirm-password" name="confirm-password" type="password" class="form-input" placeholder=" " minlength="8" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$" required/>
-                    <label for="confirm-password" class="form-label">Confirm password</label>
-                    <div class="required" id="password-notes">Required</div>
-                </div>
-                <div class="terms">
-                    <input id="terms" name="terms" type="checkbox" required/>
-                    <label for="terms">I have read and agree to these <br> <a href="http://www.libertask.org">terms and conditions</a></label>
-                    <div class="required" id="terms-notes">Required</div>
-                </div>
-                <div class="submit">
-                    <input type="submit" value="Sign up" id="submit"/>
-                </div>
-            </form>
+            <div id="form-container">
+                <img src="media/1x/logo_logo.jpg" id="logo">
+                <div id="description">Create your account to experience Libertask</div>
+                <form action='' method='get' class='sign-up-form' novalidate>
+                    <div class="form-row full-name-div">
+                        <input id="full-name" name="full-name" type="text" class="form-input" placeholder=" " autocomplete="off" autofocus/>
+                        <label for="full-name" class="form-label">Full name</label>                   
+                    </div>
+                    <div class="form-row email-div">
+                        <input id="email" name="email" type="email" class="form-input" placeholder=" " autocomplete="off" required/>
+                        <label for="email" class="form-label">Email address</label>
+                        <div class="required" id="email-notes">Required</div>
+                    </div>
+                    <div class="form-row password-div">
+                        <div class="visibility"><img src="media/1x/eye.jpg" id="eye-one"></div>
+                        <input id="password" name="password" type="password" class="form-input" placeholder=" " minlength="8" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$" required/>
+                        <label for="password" class="form-label">Password</label>
+                        
+                    </div>
+                    <div class="form-row confirm-password-div">
+                        <div class="visibility"><img src="media/1x/eye.jpg" id="eye-two"></div>
+                        <input id="confirm-password" name="confirm-password" type="password" class="form-input" placeholder=" " minlength="8" pattern="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$" required/>
+                        <label for="confirm-password" class="form-label">Confirm password</label>
+                        <div class="required" id="password-notes">Required</div>
+                    </div>
+                    <div class="form-row terms">
+                        <div id="terms-container">
+                            <input id="terms" name="terms" type="checkbox" required/>
+                            <label for="terms">I have read and agree to these <br /> <a href="http://www.libertask.org">terms and conditions</a></label>
+                        </div>
+                        <div class="required" id="terms-notes">Required</div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Sign up" id="submit"/>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>
