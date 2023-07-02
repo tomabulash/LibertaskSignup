@@ -17,6 +17,14 @@ html, body {
     background-color: white;
 }
 
+#sign-in {
+    position: absolute;
+    color: #677780;
+    right: 20px;
+    top: 20px;
+    font-size: 0.9em;
+}
+
 #left-container {
     display: flex;
     width: 640px;
@@ -223,11 +231,11 @@ html, body {
     font-size: 0.9em;
 }
 
-#terms-container > label > a{
+a {
     color: #df8e71;
 }
 
-#terms-container > label > a:focus {
+a:focus {
     border: 2.5px solid #df8e71;
     outline: 0 none;
 }
@@ -277,7 +285,7 @@ html, body {
         flex-direction: column;
     }
     #left-container {
-        padding-top: 70px;
+        padding-top: 100px;
         padding-bottom: 70px;
         width: 100%;
         justify-content: center;
