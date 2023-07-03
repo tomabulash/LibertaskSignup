@@ -23,6 +23,7 @@ html, body {
     right: 20px;
     top: 20px;
     font-size: 0.9em;
+    font-weight: 500;
 }
 
 #left-container {
@@ -248,6 +249,11 @@ a:focus {
     font-size: 0.8em;
     color: #677780;
     opacity: 65%;
+}
+
+.error#terms-notes {
+    padding-left: 22px;
+    width: fit-content;
 }
 
 .submit {
